@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 17 Gru 2018, 11:12
+-- Czas generowania: 18 Gru 2018, 00:16
 -- Wersja serwera: 10.1.36-MariaDB
 -- Wersja PHP: 7.2.10
 
@@ -32,15 +32,17 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `nick` text COLLATE utf8_polish_ci NOT NULL,
   `email` text COLLATE utf8_polish_ci NOT NULL,
-  `password` text COLLATE utf8_polish_ci NOT NULL
+  `password` text COLLATE utf8_polish_ci NOT NULL,
+  `avatar` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `nick`, `email`, `password`) VALUES
-(1, 'Kibat', 'kamilbu2000@interia.pl', '123');
+INSERT INTO `users` (`id`, `nick`, `email`, `password`, `avatar`) VALUES
+(2, 'kamil', 'kamil@123.pl', '12345678', 0),
+(3, 'tomek', 'tomek123@123.pl', '12345678', 1);
 
 --
 -- Indeksy dla zrzutów tabel
@@ -60,7 +62,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
