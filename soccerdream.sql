@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 18 Gru 2018, 00:16
+-- Czas generowania: 26 Mar 2019, 21:11
 -- Wersja serwera: 10.1.36-MariaDB
 -- Wersja PHP: 7.2.10
 
@@ -33,16 +33,21 @@ CREATE TABLE `users` (
   `nick` text COLLATE utf8_polish_ci NOT NULL,
   `email` text COLLATE utf8_polish_ci NOT NULL,
   `password` text COLLATE utf8_polish_ci NOT NULL,
-  `avatar` int(11) NOT NULL
+  `avatar` text COLLATE utf8_polish_ci NOT NULL,
+  `name` text COLLATE utf8_polish_ci NOT NULL,
+  `birth_date` text COLLATE utf8_polish_ci NOT NULL,
+  `nationality` text COLLATE utf8_polish_ci NOT NULL,
+  `description` text COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `nick`, `email`, `password`, `avatar`) VALUES
-(2, 'kamil', 'kamil@123.pl', '12345678', 0),
-(3, 'tomek', 'tomek123@123.pl', '12345678', 1);
+INSERT INTO `users` (`id`, `nick`, `email`, `password`, `avatar`, `name`, `birth_date`, `nationality`, `description`) VALUES
+(2, 'kamil', 'kamil@123.pl', '12345678', 'url(\"./image/avatars/avatar2-2-1.png\")', 'sdfgdfg', '2019-03-13', 'Polska', 'sdfsdf'),
+(3, 'tomek', 'tomek123@123.pl', '12345678', '1', '', '0000-00-00', '', ''),
+(4, 'Damian', 'damian@123.pl', '12345678', 'url(\"./image/avatars/avatar3-2-1.png\")', 'Damian', '2019-03-13', 'Polska', 'Czesc');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -62,7 +67,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
