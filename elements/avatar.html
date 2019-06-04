@@ -1,0 +1,79 @@
+
+
+
+<div class="container">
+<header class="game-header"><img class="header-img-game" src="image/logo.png" width="200px" height="100px">
+    <a href="php/logout.php">Logout</a>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 order-lg-1">
+            <div id="avatar"></div>
+            <div id="avatar_form">
+                    <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <input type="button" id="hair_left" onclick="arrow_left_skin()">
+                        </div>
+                        <div class="col">
+                            Kolor skóry
+                        </div>
+                        <div class="col">
+                            <input type="button" id="hair_right" onclick="arrow_right_skin()">
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center; margin-top:2%;">
+                            <div class="col">
+                                <input type="button" id="hair_left" onclick="arrow_left_hair()">
+                            </div>
+                            <div class="col">
+                                Włosy
+                            </div>
+                            <div class="col">
+                                <input type="button" id="hair_right" onclick="arrow_right_hair()">
+                            </div>
+                    </div>
+                    <div class="row" style="text-align: center; margin-top:2%;">
+                            <div class="col">
+                                <input type="button" id="hair_left" onclick="arrow_left_hairColor()">
+                            </div>
+                            <div class="col">
+                                Kolor Włosów
+                            </div>
+                            <div class="col">
+                                <input type="button" id="hair_right" onclick="arrow_right_hairColor()">
+                            </div>
+                    </div>
+                    <form method="POST" action="php/updateUser.php">
+                    <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <input type="name" placeholder="Imię" name="name" required>
+                        </div>
+                </div>
+                <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <input type="date" name="date" required>
+                        </div>
+                </div>
+                <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <input type="nation" placeholder="Narodowość" name="nation" required>
+                        </div>
+                </div>
+                <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <input type="desc" placeholder="Krótki opis" name="description" required>
+                        </div>
+                        <div id="dupa"></div>
+                </div>
+                <div class="row" style="text-align: center; margin-top:2%;">
+                        <div class="col">
+                            <button type="submit">Gotowe</button>
+                        </div>
+                </div>
+
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/avatar.js" type="text/javascript"></script>

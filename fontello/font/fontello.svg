@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="left-big" unicode="&#xe801;" d="M857 350v-71q0-30-18-51t-47-21h-393l164-164q21-20 21-50t-21-50l-42-43q-21-20-51-20-29 0-50 20l-364 364q-20 21-20 50 0 29 20 51l364 363q21 21 50 21 29 0 51-21l42-41q21-22 21-51t-21-51l-164-164h393q29 0 47-20t18-51z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="facebook" unicode="&#xf09a;" d="M535 843v-147h-87q-48 0-65-20t-17-60v-106h164l-22-165h-142v-424h-171v424h-142v165h142v122q0 104 58 161t155 57q82 0 127-7z" horiz-adv-x="571.4" />
+</font>
+</defs>
+</svg>
